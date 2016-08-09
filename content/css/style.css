@@ -1,0 +1,181 @@
+html,
+body,
+.view-wrapper {
+	height: 100%;
+	color: #666;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: normal;
+}
+ul, 
+ol {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.help-block {
+	color: #c00;
+}
+
+/* Styles for logon page */
+.logon-page {
+	position: relative;
+	height: 100%;
+	background: scroll #bcf2ff url(../img/bg.png) left top repeat;
+}
+
+.logon-form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 500px;
+	padding: 15px;
+	background-color: rgba(255, 255, 255, 0.5);
+	-webkit-border-radius: 5px;
+            border-radius: 5px;
+    border: 2px solid #fff;
+    -webkit-box-shadow: 0px 10px 10px -10px rgba(0,0,0,1);
+            box-shadow: 0px 10px 10px -10px rgba(0,0,0,1); 
+    transform: translate(-50%, -50%);
+}
+
+.logon-form .form-title {
+	margin-bottom: 20px;
+}
+
+/* Styles for main template */
+
+.main-header {
+	height: 50px;
+	background-color: #bcf2ff;
+	padding: 0 15px;
+}
+
+.main-header:before {
+	content:'';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.logo,
+.main-nav {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.logo a {
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 26px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.logo .first-words {
+	color: tomato;
+}
+
+.main-nav {
+	margin-left: 80px;
+}
+
+.main-nav-item {
+	display: inline-block;
+}
+
+.main-nav-item + .main-nav-item {
+	margin-left: 20px;
+}
+
+.main-nav-item a {
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 50px;
+	color: #fff;
+	-webkit-transition: color .3s ease-out;
+       -moz-transition: color .3s ease-out;
+         -o-transition: color .3s ease-out;
+            transition: color .3s ease-out;
+}
+
+.main-nav-item a:hover {
+	color: tomato;
+}
+
+ /*Styles for welcome logo*/
+
+.welcome-logo {
+ 	position: relative;
+	display: block;
+	width: 200px;
+	height: 200px;
+	margin: 100px auto 0;
+	background-color: tomato;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+}
+
+.welcome-logo:before {
+	content: "C";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 150px;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+.welcome-text {
+	text-align: center;
+}
+.welcome-text h2,
+.welcome-text a {
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+.welcome-text h2 + h2 {
+	margin-top: 10px;
+}
+
+.calc-wrapper {
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+.calc-wrapper h1,
+.calc-wrapper h3 {
+	margin-bottom: 15px;
+}
+
+.calc-wrapper h3 {
+	margin-top: 30px;
+}
+
+.calc-table {
+	width: auto;
+}
+
+.calc-table .table-title {
+	width: 150px;
+}
+
+.calc-table .table-cal {
+	width: 50px;
+}
+
+.calc-result {
+	display: inline-block;
+	margin-left: 30px;
+	font-size: 16px;
+	font-weight: bold;
+}

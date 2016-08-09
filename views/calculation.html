@@ -1,0 +1,39 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="calc-wrapper">
+				<h1>Calorie calculator</h1>
+
+				<p>Do you follow the figure, but do not want to limit myself every minute all over? Then our calorie calculator specifically for you.</p>
+
+				<p>Here you can calculate how much you spend calories during the day, week or month, if you lead a normal life. If the result does not suit you, you can easily adjust your diet or lifestyle.</p>
+
+				<h3>How long have you eaten?</h3>
+				<p>Put down next to each type of product the amount in grams.</p>
+
+				<table class="table calc-table" ng-repeat="cat in foodData track by $index">
+					<caption ng-bind="cat.name"></caption>
+						<tr>
+							<th>Product</th>
+							<th>Kcal/100gr.</th>
+							<th>How much is eaten (gr.)</th>
+						</tr>
+						<tr ng-repeat="i in cat.items track by $index">
+							<td class="table-title" ng-bind="i.title"></td>
+							<td class="table-cal" ng-bind="i.cal"></td>
+							<td>
+								<input type="number" name="amount" 
+									ng-model="i.amount"
+									ng-change="i.result = changeInput(i.cal, i.amount)"
+									min="1"
+									>
+							</td>
+						</tr>
+				</table>
+
+				<button class="btn btn-danger" ng-click="calculateCalories()">Calculate</button>
+				<span class="calc-result" ng-show="showCalculationResult"><span ng-bind="calculationResult"></span> kcal</span>
+			</div>
+		</div>
+	</div>
+</div>
